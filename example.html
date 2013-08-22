@@ -1,57 +1,3 @@
-MooTools.PlatformFeatures
-=========================
-
-Simple detection of JS &amp; Cookies enabled with modernizr inspired CSS Classes
-
-CSS-Feature Classes
--------------------
-The following CSS-Classes are added to the <html> document tag
-* **cookies/no-cookies** - indicates enabled cookies
-* **js/no-js** (note: the no-js class has to be static added to the <html> tag!)
-* **session-init** - indicates first visit since start of the current browser session (usefull for welcome messages/privacy statements)
-
-Example Data of window.PlatformFeatures Object
---------------
-```javascript
-{
-
-    "features":{
-        "xpath":true,
-        "air":false,
-        "query":true,
-        "json":true,
-        "xhr":true
-    },
-    "name":"firefox",
-    "version":23,
-    "platform":{
-        "name":"win",
-        "win":true
-    },
-    "plugins":{
-        "Flash":{
-            "version":11,
-            "build":800
-        }
-    },
-    "java":false,
-    "language":"de-DE",
-    "userAgent":"Mozilla/5.0 (Windows NT 6.1; WOW64; rv:23.0) Gecko/20100101 Firefox/23.0",
-    "cookiesEnabled":true,
-    "time":1377168219246,
-    "timezoneOffset":-120
-}
-```
-
-Installation
-------------
-* Include MooTools.Core (>= v1.4) into your Webpage
-* Include PlatformFeatures.js
-* That's it! - All detected features are accessible with `window.PlatformFeatures` Object
-
-Usage Example
--------------
-```html
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -115,5 +61,3 @@ Usage Example
 	<h3 id="cod">Cookies Disabled</h3>
 </body>
 </html>
-```
-
